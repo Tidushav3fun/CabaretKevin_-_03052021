@@ -1,4 +1,3 @@
-
 const express = require('express')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
@@ -17,8 +16,7 @@ require('dotenv').config()
 
 const CONNECT = process.env.CONNECT;
 
-mongoose.connect(CONNECT,
-  {
+mongoose.connect(CONNECT, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
